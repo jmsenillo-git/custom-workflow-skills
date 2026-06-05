@@ -29,13 +29,13 @@ Takes a rough plan or task description and returns a plan that's scoped, sequenc
 Install every skill in the repo:
 
 ```bash
-npx skills add [your-username]/shopify-skills
+npx skills add jmsenillo-git/shopify-skills
 ```
 
 Install a single skill:
 
 ```bash
-npx skills add [your-username]/shopify-skills -s task-plan-creator
+npx skills add jmsenillo-git/shopify-skills -s task-plan-creator
 ```
 
 Skills install at project level by default. Browse and learn more at [skills.sh](https://skills.sh).
