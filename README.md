@@ -1,4 +1,4 @@
-# shopify-skills
+# custom-workflow-skills
 
 A personal collection of custom AI agent skills for Shopify theme development and self-directed learning, built by JM Senillo.
 
@@ -29,13 +29,13 @@ Takes a rough plan or task description and returns a plan that's scoped, sequenc
 Install every skill in the repo:
 
 ```bash
-npx skills add jmsenillo-git/shopify-skills
+npx skills add jmsenillo-git/custom-workflow-skills
 ```
 
 Install a single skill:
 
 ```bash
-npx skills add jmsenillo-git/shopify-skills -s task-plan-creator
+npx skills add jmsenillo-git/custom-workflow-skills -s task-plan-creator
 ```
 
 Skills install at project level by default. Browse and learn more at [skills.sh](https://skills.sh).
