@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "task-plan-creator": {
+      "source": "jmsenillo-git/custom-workflow-skills",
+      "sourceType": "github",
+      "skillPath": "skills/task-plan-creator/SKILL.md",
+      "computedHash": "129b7957dcd7f5f5adcf6d267dcd50f50b19d9ca48700353dd2893f07dc7be84"
+    }
+  }
+}

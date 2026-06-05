@@ -9,6 +9,7 @@ Each skill encodes a repeated, high-friction workflow into reusable procedural k
 | Skill | What it does |
 |-------|--------------|
 | [task-plan-creator](skills/task-plan-creator) | Turns rough task plans into sequenced, weight-aware, risk-checked plans for Shopify builds and for learning new tech. Challenges the premise before optimizing, and scales output rigor to the actual size of the task. |
+| [shopify-app-theme-bridge](skills/shopify-app-theme-bridge) | Diagnoses and fixes storefronts where a third-party app has replaced a native theme component (variant picker, add-to-cart, gallery, swatches) and broken a built-in behaviour as a side effect. Diagnose-first: produces an investigation plan before writing code. |
 
 ## task-plan-creator
 
@@ -24,6 +25,18 @@ Takes a rough plan or task description and returns a plan that's scoped, sequenc
 
 **Triggers on:** "improve this plan", "create me a plan", "plan this out", "draft a plan for", "task plan for", "study plan for", "learning plan for" — and on any rough plan shared with intent to sharpen it.
 
+## shopify-app-theme-bridge
+
+Diagnoses and fixes the specific class of storefront bug where a third-party app has overridden a native theme component on a product page and silently broken a built-in behaviour — a variant change that no longer updates the gallery, price, or inventory; a feature that works on other products but not this one.
+
+**How it works:**
+
+- **Diagnose-first** — produces a structured investigation plan before any code is written, isolating whether the break is app-side or theme-side.
+- **Targets the common culprits** — bundle, subscription, and variant apps (Kaching Bundles, Bold, ReCharge, Globo, and similar) that replace the native variant picker, add-to-cart, gallery, or swatches.
+- **Ships reusable browser-console diagnostic snippets** for reproducing and pinpointing the desync.
+
+**Triggers on:** a native PDP behaviour that "used to work" or "works on other products but not this one"; any bug involving a bundle / subscription / variant app; a variant selection that doesn't update gallery / price / inventory; or a request to re-connect, re-sync, or "make X talk to Y" on a product page — even when the user only describes the symptom and hasn't named an app.
+
 ## Install
 
 Install every skill in the repo:
@@ -36,6 +49,7 @@ Install a single skill:
 
 ```bash
 npx skills add jmsenillo-git/custom-workflow-skills -s task-plan-creator
+npx skills add jmsenillo-git/custom-workflow-skills -s shopify-app-theme-bridge
 ```
 
 Skills install at project level by default. Browse and learn more at [skills.sh](https://skills.sh).
@@ -48,7 +62,9 @@ Each skill is fully self-contained in its own folder under `skills/`, holding a 
 custom-workflow-skills/
 ├── README.md
 └── skills/
-    └── task-plan-creator/
+    ├── task-plan-creator/
+    │   └── SKILL.md
+    └── shopify-app-theme-bridge/
         └── SKILL.md
 ```
 
