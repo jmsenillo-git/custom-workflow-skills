@@ -1,6 +1,6 @@
 # shopify-skills
 
-A personal collection of custom AI agent skills for Shopify theme development and self-directed learning, built by [Your Name].
+A personal collection of custom AI agent skills for Shopify theme development and self-directed learning, built by JM Senillo.
 
 Each skill encodes a repeated, high-friction workflow into reusable procedural knowledge — so the agent handles it the same considered way every time, instead of being re-prompted from scratch. Skills are written for an agent that already knows Liquid, schema, metaobjects, and sections, and is actively building JavaScript fluency.
 
