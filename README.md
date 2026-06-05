@@ -1,6 +1,6 @@
-# shopify-skills
+# custom-workflow-skills
 
-A personal collection of custom AI agent skills for Shopify theme development and self-directed learning, built by [Your Name].
+A personal collection of custom AI agent skills for Shopify theme development and self-directed learning, built by John Mark Senillo.
 
 Each skill encodes a repeated, high-friction workflow into reusable procedural knowledge — so the agent handles it the same considered way every time, instead of being re-prompted from scratch. Skills are written for an agent that already knows Liquid, schema, metaobjects, and sections, and is actively building JavaScript fluency.
 
@@ -29,13 +29,13 @@ Takes a rough plan or task description and returns a plan that's scoped, sequenc
 Install every skill in the repo:
 
 ```bash
-npx skills add [your-username]/shopify-skills
+npx skills add jmsenillo-git/custom-workflow-skills
 ```
 
 Install a single skill:
 
 ```bash
-npx skills add [your-username]/shopify-skills -s task-plan-creator
+npx skills add jmsenillo-git/custom-workflow-skills -s task-plan-creator
 ```
 
 Skills install at project level by default. Browse and learn more at [skills.sh](https://skills.sh).
@@ -45,7 +45,7 @@ Skills install at project level by default. Browse and learn more at [skills.sh]
 Each skill is fully self-contained in its own folder under `skills/`, holding a `SKILL.md` plus any reference files or scripts it depends on. Nothing is shared across skills at the repo root — that keeps single-skill installs clean and lets each skill be versioned or removed independently.
 
 ```
-shopify-skills/
+custom-workflow-skills/
 ├── README.md
 └── skills/
     └── task-plan-creator/
@@ -56,4 +56,4 @@ A skill is just a directory with a `SKILL.md` containing YAML frontmatter (`name
 
 ## License
 
-[Choose one — MIT is the common default for shareable skills, or omit this section if keeping it personal.]
+MIT
